@@ -1,66 +1,70 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="1" inline="true" x="-275" y="48">
-    <value name="TIMES">
-      <block type="math_number" id="2">
-        <field name="NUM">5000</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="variables_set" id="3" inline="true">
-        <field name="VAR">water</field>
-        <value name="VALUE">
-          <block type="sensor_spectrometer" id="4">
-            <field name="LIGHT">BLUE</field>
+  <block type="movement_forward" id="27" x="-270" y="26">
+    <next>
+      <block type="controls_repeat" id="1" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="2">
+            <field name="NUM">5000</field>
           </block>
         </value>
-        <next>
-          <block type="oled_cleardisplay" id="5">
+        <statement name="DO">
+          <block type="variables_set" id="3" inline="true">
+            <field name="VAR">water</field>
+            <value name="VALUE">
+              <block type="sensor_spectrometer" id="4">
+                <field name="LIGHT">BLUE</field>
+              </block>
+            </value>
             <next>
-              <block type="oled_setcursor" id="6" inline="true">
-                <value name="STARTX">
-                  <block type="math_number" id="7">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-                <value name="STARTY">
-                  <block type="math_number" id="8">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
+              <block type="oled_cleardisplay" id="5">
                 <next>
-                  <block type="oled_drawnumber" id="9" inline="true">
-                    <value name="NUMBER">
-                      <block type="variables_get" id="10">
-                        <field name="VAR">water</field>
+                  <block type="oled_setcursor" id="6" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="7">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="8">
+                        <field name="NUM">10</field>
                       </block>
                     </value>
                     <next>
-                      <block type="variables_set" id="11" inline="true">
-                        <field name="VAR">land</field>
-                        <value name="VALUE">
-                          <block type="sensor_spectrometer" id="12">
-                            <field name="LIGHT">RED</field>
+                      <block type="oled_drawnumber" id="9" inline="true">
+                        <value name="NUMBER">
+                          <block type="variables_get" id="10">
+                            <field name="VAR">water</field>
                           </block>
                         </value>
                         <next>
-                          <block type="oled_setcursor" id="13" inline="true">
-                            <value name="STARTX">
-                              <block type="math_number" id="14">
-                                <field name="NUM">10</field>
-                              </block>
-                            </value>
-                            <value name="STARTY">
-                              <block type="math_number" id="15">
-                                <field name="NUM">30</field>
+                          <block type="variables_set" id="11" inline="true">
+                            <field name="VAR">land</field>
+                            <value name="VALUE">
+                              <block type="sensor_spectrometer" id="12">
+                                <field name="LIGHT">RED</field>
                               </block>
                             </value>
                             <next>
-                              <block type="oled_drawnumber" id="16" inline="true">
-                                <value name="NUMBER">
-                                  <block type="variables_get" id="17">
-                                    <field name="VAR">land</field>
+                              <block type="oled_setcursor" id="13" inline="true">
+                                <value name="STARTX">
+                                  <block type="math_number" id="14">
+                                    <field name="NUM">10</field>
                                   </block>
                                 </value>
+                                <value name="STARTY">
+                                  <block type="math_number" id="15">
+                                    <field name="NUM">30</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_drawnumber" id="16" inline="true">
+                                    <value name="NUMBER">
+                                      <block type="variables_get" id="17">
+                                        <field name="VAR">land</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
                               </block>
                             </next>
                           </block>
@@ -72,8 +76,8 @@
               </block>
             </next>
           </block>
-        </next>
+        </statement>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
