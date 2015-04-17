@@ -1,11 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="1" inline="false" x="-407" y="9">
-    <value name="IF0">
-      <block type="variables_get" id="2">
-        <field name="VAR">water</field>
+  <block type="controls_repeat" id="29" inline="true" x="-275" y="48">
+    <value name="TIMES">
+      <block type="math_number" id="36">
+        <field name="NUM">5000</field>
       </block>
     </value>
-    <statement name="DO0">
+    <statement name="DO">
       <block type="variables_set" id="3" inline="true">
         <field name="VAR">water</field>
         <value name="VALUE">
