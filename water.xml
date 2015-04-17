@@ -81,6 +81,15 @@
                                             <field name="NUM">30</field>
                                           </block>
                                         </value>
+                                        <next>
+                                          <block type="oled_drawnumber" id="160" inline="true">
+                                            <value name="NUMBER">
+                                              <block type="variables_get" id="198">
+                                                <field name="VAR">herbs and greens</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
                                       </block>
                                     </next>
                                   </block>
