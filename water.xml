@@ -63,7 +63,7 @@
                                 </value>
                                 <next>
                                   <block type="variables_set" id="25" inline="true">
-                                    <field name="VAR">herbs and greens</field>
+                                    <field name="VAR">herbs</field>
                                     <value name="VALUE">
                                       <block type="sensor_spectrometer" id="100">
                                         <field name="LIGHT">GREEN</field>
@@ -85,7 +85,7 @@
                                           <block type="oled_drawnumber" id="160" inline="true">
                                             <value name="NUMBER">
                                               <block type="variables_get" id="198">
-                                                <field name="VAR">herbs and greens</field>
+                                                <field name="VAR">herbs</field>
                                               </block>
                                             </value>
                                           </block>
