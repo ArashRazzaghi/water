@@ -1,7 +1,7 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="29" inline="true" x="-275" y="48">
+  <block type="controls_repeat" id="1" inline="true" x="-275" y="48">
     <value name="TIMES">
-      <block type="math_number" id="36">
+      <block type="math_number" id="2">
         <field name="NUM">5000</field>
       </block>
     </value>
@@ -35,29 +35,29 @@
                       </block>
                     </value>
                     <next>
-                      <block type="variables_set" id="70" inline="true">
+                      <block type="variables_set" id="11" inline="true">
                         <field name="VAR">land</field>
                         <value name="VALUE">
-                          <block type="sensor_spectrometer" id="88">
+                          <block type="sensor_spectrometer" id="12">
                             <field name="LIGHT">RED</field>
                           </block>
                         </value>
                         <next>
-                          <block type="oled_setcursor" id="171" inline="true">
+                          <block type="oled_setcursor" id="13" inline="true">
                             <value name="STARTX">
-                              <block type="math_number" id="195">
+                              <block type="math_number" id="14">
                                 <field name="NUM">10</field>
                               </block>
                             </value>
                             <value name="STARTY">
-                              <block type="math_number" id="196">
+                              <block type="math_number" id="15">
                                 <field name="NUM">30</field>
                               </block>
                             </value>
                             <next>
-                              <block type="oled_drawnumber" id="255" inline="true">
+                              <block type="oled_drawnumber" id="16" inline="true">
                                 <value name="NUMBER">
-                                  <block type="variables_get" id="282">
+                                  <block type="variables_get" id="17">
                                     <field name="VAR">land</field>
                                   </block>
                                 </value>
