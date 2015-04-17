@@ -61,6 +61,30 @@
                                     <field name="VAR">land</field>
                                   </block>
                                 </value>
+                                <next>
+                                  <block type="variables_set" id="25" inline="true">
+                                    <field name="VAR">herbs and greens</field>
+                                    <value name="VALUE">
+                                      <block type="sensor_spectrometer" id="100">
+                                        <field name="LIGHT">GREEN</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="oled_setcursor" id="109" inline="true">
+                                        <value name="STARTX">
+                                          <block type="math_number" id="138">
+                                            <field name="NUM">10</field>
+                                          </block>
+                                        </value>
+                                        <value name="STARTY">
+                                          <block type="math_number" id="139">
+                                            <field name="NUM">30</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
                               </block>
                             </next>
                           </block>
